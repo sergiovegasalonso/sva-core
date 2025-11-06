@@ -79,7 +79,7 @@ public static class DependencyInjection
   await runCommand(`dotnet add ${subdomain}/test/Application.UnitTests/${PREFIX}.${subdomain}.Application.UnitTests.csproj reference ${subdomain}/src/Infrastructure/${PREFIX}.${subdomain}.Infrastructure.csproj`);
   await runCommand(`dotnet add ${subdomain}/test/Domain.UnitTests/${PREFIX}.${subdomain}.Domain.UnitTests.csproj reference ${subdomain}/src/Domain/${PREFIX}.${subdomain}.Domain.csproj`);
 
-  await runCommand(`dotnet format ./${subdomain}.Core.sln`);
+  await runCommand(`dotnet format ./${PREFIX}.Core.sln`);
   console.log(`\n✅ Subdomain '${subdomain}' created successfully!`);
 }
 
