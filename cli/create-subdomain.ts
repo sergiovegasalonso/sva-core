@@ -29,6 +29,15 @@ async function createSubdomain(subdomain: string): Promise<void> {
   console.log("📦 Creating Application layer...");
   await runCommand(`dotnet new classlib -n ${PREFIX}.${subdomain}.Application -o ${subdomain}/src/Application`);
   await runCommand(`dotnet sln add --in-root ${subdomain}/src/Application/${PREFIX}.${subdomain}.Application.csproj`);
+  await Deno.writeTextFile(`${subdomain}/src/Application/GlobalUsings.cs`, "");
+  await Deno.writeTextFile(`${subdomain}/src/Application/DependencyInjection.cs`, `namespace Microsoft.Extensions.DependencyInjection;
+
+public static class DependencyInjection
+{
+    public static void AddApplicationServices(this IHostApplicationBuilder builder)
+    {
+    }
+}`);
   await runCommand(`dotnet new mstest -n ${PREFIX}.${subdomain}.Application.FunctionalTests -o ${subdomain}/test/Application.FunctionalTests`);
   await runCommand(`dotnet sln add --in-root ${subdomain}/test/Application.FunctionalTests/${PREFIX}.${subdomain}.Application.FunctionalTests.csproj`);
   await runCommand(`dotnet new mstest -n ${PREFIX}.${subdomain}.Application.UnitTests -o ${subdomain}/test/Application.UnitTests`);
@@ -38,6 +47,7 @@ async function createSubdomain(subdomain: string): Promise<void> {
   console.log("\n📦 Creating Domain layer...");
   await runCommand(`dotnet new classlib -n ${PREFIX}.${subdomain}.Domain -o ${subdomain}/src/Domain`);
   await runCommand(`dotnet sln add --in-root ${subdomain}/src/Domain/${PREFIX}.${subdomain}.Domain.csproj`);
+  await Deno.writeTextFile(`${subdomain}/src/Domain/GlobalUsings.cs`, "");
   await runCommand(`dotnet new mstest -n ${PREFIX}.${subdomain}.Domain.UnitTests -o ${subdomain}/test/Domain.UnitTests`);
   await runCommand(`dotnet sln add --in-root ${subdomain}/test/Domain.UnitTests/${PREFIX}.${subdomain}.Domain.UnitTests.csproj`);
 
@@ -45,6 +55,7 @@ async function createSubdomain(subdomain: string): Promise<void> {
   console.log("\n📦 Creating API layer...");
   await runCommand(`dotnet new grpc -n ${PREFIX}.${subdomain}.API -o ${subdomain}/src/API`);
   await runCommand(`dotnet sln add --in-root ${subdomain}/src/API/${PREFIX}.${subdomain}.API.csproj`);
+  await Deno.writeTextFile(`${subdomain}/src/API/GlobalUsings.cs`, "");
   await runCommand(`dotnet new mstest -n ${PREFIX}.${subdomain}.API.AcceptanceTests -o ${subdomain}/test/API.AcceptanceTests`);
   await runCommand(`dotnet sln add --in-root ${subdomain}/test/API.AcceptanceTests/${PREFIX}.${subdomain}.API.AcceptanceTests.csproj`);
 
@@ -52,6 +63,7 @@ async function createSubdomain(subdomain: string): Promise<void> {
   console.log("\n📦 Creating Infrastructure layer...");
   await runCommand(`dotnet new classlib -n ${PREFIX}.${subdomain}.Infrastructure -o ${subdomain}/src/Infrastructure`);
   await runCommand(`dotnet sln add --in-root ${subdomain}/src/Infrastructure/${PREFIX}.${subdomain}.Infrastructure.csproj`);
+  await Deno.writeTextFile(`${subdomain}/src/Infrastructure/GlobalUsings.cs`, "");
   await runCommand(`dotnet new mstest -n ${PREFIX}.${subdomain}.Infrastructure.IntegrationTests -o ${subdomain}/test/Infrastructure.IntegrationTests`);
   await runCommand(`dotnet sln add --in-root ${subdomain}/test/Infrastructure.IntegrationTests/${PREFIX}.${subdomain}.Infrastructure.IntegrationTests.csproj`);
 
@@ -67,6 +79,7 @@ async function createSubdomain(subdomain: string): Promise<void> {
   await runCommand(`dotnet add ${subdomain}/test/Application.UnitTests/${PREFIX}.${subdomain}.Application.UnitTests.csproj reference ${subdomain}/src/Infrastructure/${PREFIX}.${subdomain}.Infrastructure.csproj`);
   await runCommand(`dotnet add ${subdomain}/test/Domain.UnitTests/${PREFIX}.${subdomain}.Domain.UnitTests.csproj reference ${subdomain}/src/Domain/${PREFIX}.${subdomain}.Domain.csproj`);
 
+  await runCommand(`dotnet format ${subdomain}`);
   console.log(`\n✅ Subdomain '${subdomain}' created successfully!`);
 }
 
