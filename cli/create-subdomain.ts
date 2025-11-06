@@ -56,6 +56,14 @@ public static class DependencyInjection
   await runCommand(`dotnet new grpc -n ${PREFIX}.${subdomain}.API -o ${subdomain}/src/API`);
   await runCommand(`dotnet sln add --in-root ${subdomain}/src/API/${PREFIX}.${subdomain}.API.csproj`);
   await Deno.writeTextFile(`${subdomain}/src/API/GlobalUsings.cs`, "");
+  await Deno.writeTextFile(`${subdomain}/src/API/DependencyInjection.cs`, `namespace Microsoft.Extensions.DependencyInjection;
+
+public static class DependencyInjection
+{
+    public static void AddAPIServices(this IHostApplicationBuilder builder)
+    {
+    }
+}`);
   await runCommand(`dotnet new mstest -n ${PREFIX}.${subdomain}.API.AcceptanceTests -o ${subdomain}/test/API.AcceptanceTests`);
   await runCommand(`dotnet sln add --in-root ${subdomain}/test/API.AcceptanceTests/${PREFIX}.${subdomain}.API.AcceptanceTests.csproj`);
 
@@ -63,6 +71,14 @@ public static class DependencyInjection
   console.log("\n📦 Creating Infrastructure layer...");
   await runCommand(`dotnet new classlib -n ${PREFIX}.${subdomain}.Infrastructure -o ${subdomain}/src/Infrastructure`);
   await runCommand(`dotnet sln add --in-root ${subdomain}/src/Infrastructure/${PREFIX}.${subdomain}.Infrastructure.csproj`);
+  await Deno.writeTextFile(`${subdomain}/src/Infrastructure/DependencyInjection.cs`, `namespace Microsoft.Extensions.DependencyInjection;
+
+public static class DependencyInjection
+{
+    public static void AddInfrastructureServices(this IHostApplicationBuilder builder)
+    {
+    }
+}`);
   await Deno.writeTextFile(`${subdomain}/src/Infrastructure/GlobalUsings.cs`, "");
   await runCommand(`dotnet new mstest -n ${PREFIX}.${subdomain}.Infrastructure.IntegrationTests -o ${subdomain}/test/Infrastructure.IntegrationTests`);
   await runCommand(`dotnet sln add --in-root ${subdomain}/test/Infrastructure.IntegrationTests/${PREFIX}.${subdomain}.Infrastructure.IntegrationTests.csproj`);
