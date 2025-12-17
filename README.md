@@ -10,6 +10,7 @@ deno run --allow-all cli/create-subdomain.ts <SubdomainName>
 
 ## pending tasks
 
+0. hacer un subdomain entero, luego el cli y luego loa mcps y agents
 1. create all globalusings in tests projects
 2. create github actions (build an run tests)
 3. add husky
