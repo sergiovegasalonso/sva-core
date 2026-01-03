@@ -1,11 +1,11 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
-using Sva.Orders.Application.Common.Interfaces;
+using Sva.Orders.Application.Ports.Secondaries;
 using Sva.Orders.Domain.Entities;
 
 namespace Sva.Orders.Infrastructure.Data;
 
-public class ApplicationDbContext : DbContext, IApplicationDbContext
+public class ApplicationDbContext : DbContext, IApplicationReadDbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 

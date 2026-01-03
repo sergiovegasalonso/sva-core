@@ -11,3 +11,5 @@ deno run --allow-all cli/create-subdomain.ts <SubdomainName>
 ## pending tasks
 
 0. globalusings, dependency injections and good practices(JsonTaylor)
+1. SIncornización entre el contexto de lectura y el de escritura
+2. cómo solucionar el problema de elementos  compartidos entre microservicios
