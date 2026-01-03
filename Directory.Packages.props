@@ -4,13 +4,13 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Grpc.AspNetCore" Version="2.64.0" />
+    <PackageVersion Include="Grpc.AspNetCore" Version="2.76.0" />
     <!-- Testing Frameworks -->
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
-    <PackageVersion Include="MSTest" Version="3.6.4" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
+    <PackageVersion Include="MSTest" Version="4.0.2" />
     <!--Entity Framework Core -->
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0-preview.5.24306.3" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0-preview.5.24306.3" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0-preview.5.24306.3" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.1" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.1" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.1" />
   </ItemGroup>
 </Project>
