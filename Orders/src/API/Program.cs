@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 
 using Sva.Orders.API.Services;
-using Sva.Orders.Infrastructure.Data;
+using Sva.Orders.Infrastructure.Adapters.ReadingDatabase;
 
 var builder = WebApplication.CreateBuilder(args);
 
