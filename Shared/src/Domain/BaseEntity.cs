@@ -1,4 +1,4 @@
-namespace Sva.Orders.Domain.Common;
+namespace Sva.Shared.Domain;
 
 public abstract class BaseEntity<T>
 {

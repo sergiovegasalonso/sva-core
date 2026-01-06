@@ -1,4 +1,4 @@
-using Sva.Orders.Domain.Common;
+using Sva.Shared.Domain;
 using Sva.Orders.Domain.Exceptions;
 
 namespace Sva.Orders.Domain.ValueObjects;

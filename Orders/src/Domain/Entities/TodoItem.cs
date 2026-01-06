@@ -1,4 +1,4 @@
-using Sva.Orders.Domain.Common;
+using Sva.Shared.Domain;
 
 namespace Sva.Orders.Domain.Entities;
 
