@@ -1,13 +1,13 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
-using Sva.Orders.Application.Ports.Secondaries;
+using Sva.Orders.Application.Ports;
 using Sva.Orders.Domain.Entities;
 
-namespace Sva.Orders.Infrastructure.Data;
+namespace Sva.Orders.Infrastructure.Adapters.ReadingDatabase;
 
-public class ApplicationDbContext : DbContext, IApplicationReadDbContext
+public class ApplicationReadingDbContext : DbContext, IApplicationReadingDbContext
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+    public ApplicationReadingDbContext(DbContextOptions<ApplicationReadingDbContext> options) : base(options) { }
 
     public DbSet<TodoList> TodoLists => Set<TodoList>();
 

@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Sva.Orders.Domain.Entities;       
 
-namespace Sva.Orders.Application.Ports.Secondaries;
+namespace Sva.Orders.Application.Ports;
 
-public interface IApplicationReadDbContext
+public interface IApplicationWritingDbContext
 {
     DbSet<TodoList> TodoLists { get; }
 
