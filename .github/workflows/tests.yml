@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 10.0.101
     - name: Restore dependencies
-      run: dotnet restore Sva.Core.sln
+      run: dotnet restore Sva.Core.slnx
     - name: Build
-      run: dotnet build Sva.Core.sln --no-restore
+      run: dotnet build Sva.Core.slnx --no-restore
     - name: Test
-      run: dotnet test Sva.Core.sln --no-build --verbosity normal
+      run: dotnet test Sva.Core.slnx --no-build --verbosity normal
