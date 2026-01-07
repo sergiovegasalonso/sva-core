@@ -1,6 +1,7 @@
-using Sva.Orders.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+using Sva.Orders.Domain.Entities;
 
 namespace Sva.Orders.Infrastructure.Adapters.ReadingDatabase.Configurations;
 

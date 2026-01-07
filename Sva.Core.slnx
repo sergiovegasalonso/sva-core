@@ -1,0 +1,33 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Shared/" />
+  <Folder Name="/Shared/src/" />
+  <Folder Name="/Shared/src/Domain/">
+    <Project Path="Shared/src/Domain/Sva.Shared.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Shared/src/IntegrationEvents/">
+    <Project Path="Shared/src/IntegrationEvents/Sva.Shared.IntegrationEvents.csproj" />
+  </Folder>
+  <Project Path="Customers/src/API/Sva.Customers.API.csproj" />
+  <Project Path="Customers/src/Application/Sva.Customers.Application.csproj" />
+  <Project Path="Customers/src/Domain/Sva.Customers.Domain.csproj" />
+  <Project Path="Customers/src/Infrastructure/Sva.Customers.Infrastructure.csproj" />
+  <Project Path="Customers/test/API.AcceptanceTests/Sva.Customers.API.AcceptanceTests.csproj" />
+  <Project Path="Customers/test/Application.FunctionalTests/Sva.Customers.Application.FunctionalTests.csproj" />
+  <Project Path="Customers/test/Application.UnitTests/Sva.Customers.Application.UnitTests.csproj" />
+  <Project Path="Customers/test/Domain.UnitTests/Sva.Customers.Domain.UnitTests.csproj" />
+  <Project Path="Customers/test/Infrastructure.IntegrationTests/Sva.Customers.Infrastructure.IntegrationTests.csproj" />
+  <Project Path="Orders/src/API/Sva.Orders.API.csproj" />
+  <Project Path="Orders/src/Application/Sva.Orders.Application.csproj" />
+  <Project Path="Orders/src/Domain/Sva.Orders.Domain.csproj" />
+  <Project Path="Orders/src/Infrastructure/Sva.Orders.Infrastructure.csproj" />
+  <Project Path="Orders/test/API.AcceptanceTests/Sva.Orders.API.AcceptanceTests.csproj" />
+  <Project Path="Orders/test/Application.FunctionalTests/Sva.Orders.Application.FunctionalTests.csproj" />
+  <Project Path="Orders/test/Application.UnitTests/Sva.Orders.Application.UnitTests.csproj" />
+  <Project Path="Orders/test/Domain.UnitTests/Sva.Orders.Domain.UnitTests.csproj" />
+  <Project Path="Orders/test/Infrastructure.IntegrationTests/Sva.Orders.Infrastructure.IntegrationTests.csproj" />
+</Solution>

@@ -1,5 +1,5 @@
-using Sva.Shared.Domain;
 using Sva.Orders.Domain.ValueObjects;
+using Sva.Shared.Domain;
 
 namespace Sva.Orders.Domain.Entities;
 

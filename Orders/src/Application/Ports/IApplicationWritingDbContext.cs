@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using Sva.Orders.Domain.Entities;       
+
+using Sva.Orders.Domain.Entities;
 
 namespace Sva.Orders.Application.Ports;
 
