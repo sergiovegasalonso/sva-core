@@ -5,14 +5,7 @@
     <EfcoreVersion>10.0.1</EfcoreVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Grpc.AspNetCore" Version="2.76.0" />
-    <!-- Testing Frameworks -->
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
-    <PackageVersion Include="MSTest" Version="4.0.2" />
-    <!--Entity Framework Core -->
-    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="$(EfcoreVersion)" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="$(EfcoreVersion)" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(EfcoreVersion)" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="$(EfcoreVersion)" />
+    <!-- API -->
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="10.0.3" />
   </ItemGroup>
 </Project>

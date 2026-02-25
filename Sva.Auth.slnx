@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Auth/" />
+  <Folder Name="/Auth/src/">
+    <Project Path="Auth/src/Sva.Auth.API/Sva.Auth.API.csproj" />
+    <Project Path="Auth/src/Sva.Auth.Application/Sva.Auth.Application.csproj" />
+    <Project Path="Auth/src/Sva.Auth.Domain/Sva.Auth.Domain.csproj" />
+    <Project Path="Auth/src/Sva.Auth.Infrastructure/Sva.Auth.Infrastructure.csproj" />
+  </Folder>
+</Solution>

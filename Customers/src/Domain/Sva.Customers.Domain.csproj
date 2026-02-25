@@ -1,5 +1,0 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Shared\src\Domain\Sva.Shared.Domain.csproj" />
-  </ItemGroup>
-</Project>
