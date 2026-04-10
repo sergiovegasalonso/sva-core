@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sva.Auth.Infrastructure\Sva.Auth.Infrastructure.csproj" />
     <ProjectReference Include="..\Sva.Auth.Application\Sva.Auth.Application.csproj" />
+    <ProjectReference Include="..\Sva.Auth.Infrastructure\Sva.Auth.Infrastructure.csproj" />    
   </ItemGroup>
   
 </Project>

@@ -6,6 +6,7 @@ https://abp.io/architecture/modular-monolith
 1. SIncornización entre el contexto de lectura y el de escritura
 2. cómo solucionar el problema de elementos  compartidos entre microservicios
 3. openapi
+4. cuadrar las dependencias en los proyectos de tests
 
 ## architecture key points
 

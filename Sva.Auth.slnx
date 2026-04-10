@@ -9,6 +9,7 @@
     <Project Path="Auth/src/Sva.Auth.API/Sva.Auth.API.csproj" />
     <Project Path="Auth/src/Sva.Auth.Application/Sva.Auth.Application.csproj" />
     <Project Path="Auth/src/Sva.Auth.Domain/Sva.Auth.Domain.csproj" />
+    <Project Path="Auth/src/Sva.Auth.gRPC/Sva.Auth.gRPC.csproj" />
     <Project Path="Auth/src/Sva.Auth.Infrastructure/Sva.Auth.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/Auth/tests/">
@@ -16,6 +17,7 @@
     <Project Path="Auth/tests/Sva.Auth.Application.FunctionalTests/Sva.Auth.Application.FunctionalTests.csproj" />
     <Project Path="Auth/tests/Sva.Auth.Application.UnitTests/Sva.Auth.Application.UnitTests.csproj" />
     <Project Path="Auth/tests/Sva.Auth.Domain.UnitTests/Sva.Auth.Domain.UnitTests.csproj" />
+    <Project Path="Auth/tests/Sva.Auth.gRPC.AcceptanceTests/Sva.Auth.gRPC.AcceptanceTests.csproj" />
     <Project Path="Auth/tests/Sva.Auth.Infrastructure.IntegrationTests/Sva.Auth.Infrastructure.IntegrationTests.csproj" />
   </Folder>
 </Solution>

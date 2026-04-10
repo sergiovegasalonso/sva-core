@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PublishAot>true</PublishAot>
+    <RootNamespace>Sva.Auth.gRPC</RootNamespace>
+    <AssemblyName>Sva.Auth.gRPC</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sva.Auth.Application\Sva.Auth.Application.csproj" />
+    <ProjectReference Include="..\Sva.Auth.Infrastructure\Sva.Auth.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
