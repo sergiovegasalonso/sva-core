@@ -12,6 +12,7 @@ https://abp.io/architecture/modular-monolith
 7. ci/cd
 8. husky o lo que sea con dotnet format y dotnet build y dotnet tests y lo que más sea
 9. hacer tests que respeten las reglas de dependencia entre proyectos
+10. meter docker o unikernels o lo que sea 
 
 ## architecture key points
 
