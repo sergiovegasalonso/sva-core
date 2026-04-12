@@ -7,6 +7,7 @@ https://abp.io/architecture/modular-monolith
 2. cómo solucionar el problema de elementos  compartidos entre microservicios
 3. openapi
 4. cuadrar las dependencias en los proyectos de tests
+5. patrones de diseño, cloud, buenas prácticas de código, testing y cosas apuntadas en el notes de apple
 
 ## architecture key points
 
