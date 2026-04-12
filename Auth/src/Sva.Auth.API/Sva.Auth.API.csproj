@@ -3,8 +3,6 @@
   <PropertyGroup>
     <InvariantGlobalization>true</InvariantGlobalization>
     <PublishAot>true</PublishAot>
-    <RootNamespace>Sva.Auth.API</RootNamespace>
-    <AssemblyName>Sva.Auth.API</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,5 +13,5 @@
     <ProjectReference Include="..\Sva.Auth.Application\Sva.Auth.Application.csproj" />
     <ProjectReference Include="..\Sva.Auth.Infrastructure\Sva.Auth.Infrastructure.csproj" />    
   </ItemGroup>
-  
+
 </Project>

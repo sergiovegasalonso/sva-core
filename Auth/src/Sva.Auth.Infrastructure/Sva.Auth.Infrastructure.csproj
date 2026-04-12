@@ -1,10 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <RootNamespace>Sva.Auth.Infrastructure</RootNamespace>
-    <AssemblyName>Sva.Auth.Infrastructure</AssemblyName>
-  </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Sva.Auth.Application\Sva.Auth.Application.csproj" />
   </ItemGroup>

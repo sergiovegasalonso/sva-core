@@ -1,24 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <LangVersion>latest</LangVersion>
-    <IsPackable>false</IsPackable>
-    <RootNamespace>Sva.Auth.Domain.UnitTests</RootNamespace>
-    <AssemblyName>Sva.Auth.Domain.UnitTests</AssemblyName>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="coverlet.collector" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" />
-    <PackageReference Include="NUnit" />
-    <PackageReference Include="NUnit.Analyzers" />
-    <PackageReference Include="NUnit3TestAdapter" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Using Include="NUnit.Framework" />
-  </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\src\Sva.Auth.Domain\Sva.Auth.Domain.csproj" />
   </ItemGroup>

@@ -2,8 +2,6 @@
 
   <PropertyGroup>
     <PublishAot>true</PublishAot>
-    <RootNamespace>Sva.Auth.gRPC</RootNamespace>
-    <AssemblyName>Sva.Auth.gRPC</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
