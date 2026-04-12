@@ -1,0 +1,20 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <!-- Guardrail: test projects should not be packable. -->
+  <Target Name="FailIfPackedTestProject" AfterTargets="Build">
+      <Error
+        Condition="'$(IsTestProject)' == 'true' and '$(IsPackable)' == 'true'"
+        Text="Test projects must not be packable. Set IsPackable=false." />
+  </Target>
+
+  <!-- Optional quality hint: full symbols usually add size and build time in tests. -->
+  <Target Name="WarnSymbolsInTests" AfterTargets="Build">
+      <Warning
+        Condition="'$(IsTestProject)' == 'true' and '$(DebugType)' == 'full'"
+        Text="DebugType=full in test projects may increase artifact size and build time." />
+  </Target>
+
+  <Target Name="CustomAfterBuildTarget" AfterTargets="Build">
+      <Message Text="Applied shared test build checks from Directory.Build.targets" Importance="high" />
+  </Target>
+</Project>

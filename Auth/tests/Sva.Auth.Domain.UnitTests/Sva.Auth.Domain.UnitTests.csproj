@@ -1,7 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <ItemGroup>
     <ProjectReference Include="..\..\src\Sva.Auth.Domain\Sva.Auth.Domain.csproj" />
   </ItemGroup>
-
 </Project>
