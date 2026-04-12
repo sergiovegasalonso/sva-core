@@ -1,17 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
   <PropertyGroup>
     <InvariantGlobalization>true</InvariantGlobalization>
     <PublishAot>true</PublishAot>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Sva.Auth.Application\Sva.Auth.Application.csproj" />
     <ProjectReference Include="..\Sva.Auth.Infrastructure\Sva.Auth.Infrastructure.csproj" />    
   </ItemGroup>
-
 </Project>

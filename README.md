@@ -11,6 +11,7 @@ https://abp.io/architecture/modular-monolith
 6. para qué sirve el dotnet-tools?
 7. ci/cd
 8. husky o lo que sea con dotnet format y dotnet build y dotnet tests y lo que más sea
+9. hacer tests que respeten las reglas de dependencia entre proyectos
 
 ## architecture key points
 
